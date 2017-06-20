@@ -6,7 +6,7 @@ module.exports = {
   apps: [
     // First application
     {
-      name: 'STATIC',
+      name: 'APP',
       script: './dist/server.js',
       watch: ["dist"],
       watch_options : {
@@ -23,7 +23,7 @@ module.exports = {
   ],
 
   /**
-   * Deployment section
+   * Deployment section - Auto generated
    * http://pm2.keymetrics.io/docs/usage/deployment/
    */
   deploy: {

@@ -29,7 +29,7 @@ var List = function List(_ref2) {
       "ul",
       null,
       listData.map(function (item) {
-        return _react2.default.createElement(ListItem, { item: item });
+        return _react2.default.createElement(ListItem, { key: item, item: item });
       })
     )
   );

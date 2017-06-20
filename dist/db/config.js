@@ -10,6 +10,12 @@ var config = {
   user: "root",
   password: "chewinggum",
   database: "sample"
-};
 
-var connectionPool = exports.connectionPool = mysql.createPool(config);
+  //const config = {
+  //host: "localhost",
+  //user: "root",
+  //password: "SiriVaishu57",
+  //database: "go_bumpr"
+  //}
+  //
+};var connectionPool = exports.connectionPool = mysql.createPool(config);

@@ -12,10 +12,11 @@ To start in dev mode
 ```shell
 npm run start:dev
 ```
-Changes to the files in the lib folder will be auto built and the server will be restarted once done
-** Browser has to be reloaded manually **
+Changes to the files in the lib folder will be auto built and the server will be restarted once done.
 
-For Formatting
+*Browser has to be reloaded manually*
+
+For Formatting (with prettier)
 ```shell
 npm run format
 ```
@@ -23,6 +24,10 @@ npm run format
 For VIM users
 Clean Vim Swap files
 ```shell
+npm run clean:swap
+
+or
+
 find ./ -type f -name "\.*sw[klmnop]" -delete
 ```
 ### TODO

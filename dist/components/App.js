@@ -1,24 +1,21 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.app = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = require("react-dom");
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _MuiThemeProvider = require("material-ui/styles/MuiThemeProvider");
+var _MuiThemeProvider = require('material-ui/styles/MuiThemeProvider');
 
 var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
 
-var _MyAwesomeReactComponent = require("./MyAwesomeReactComponent");
+var _MyAwesomeReactComponent = require('./MyAwesomeReactComponent');
 
 var _MyAwesomeReactComponent2 = _interopRequireDefault(_MyAwesomeReactComponent);
 
@@ -38,7 +35,7 @@ var App = function App() {
   );
 };
 
-var app = function (_React$Component) {
+var app = exports.app = function (_React$Component) {
   _inherits(app, _React$Component);
 
   function app() {
@@ -48,12 +45,12 @@ var app = function (_React$Component) {
   }
 
   _createClass(app, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "div",
+        'div',
         null,
-        "Hello World!!!"
+        'Hello World!!!'
       );
     }
   }]);

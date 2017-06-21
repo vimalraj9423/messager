@@ -17,3 +17,11 @@ var homeTemplateWithData = exports.homeTemplateWithData = function homeTemplateW
 
     return "\n<!DOCTYPE html>\n<html>\n    <head>\n        <title>" + title + "</title>\n         <script>window.__APP_INITIAL_STATE__ = " + initialState + "</script>\n    </head>\n    <body>\n        <div id=\"root\">" + markup + "</div>\n       <script src=\"./assets/home.bundle.js\"></script>\n    </body>\n</html>\n";
 };
+
+var godsTemplate = exports.godsTemplate = function godsTemplate(_ref3) {
+    var markup = _ref3.markup,
+        title = _ref3.title,
+        initialState = _ref3.initialState;
+
+    return "\n<!DOCTYPE html>\n<html>\n    <head>\n        <title>" + title + "</title>\n         <script>window.__APP_INITIAL_STATE__ = " + initialState + "</script>\n    </head>\n    <body>\n        <div id=\"root\">" + markup + "</div>\n       <script src=\"./assets/gods.bundle.js\"></script>\n    </body>\n</html>\n";
+};

@@ -18,7 +18,7 @@
     "live-server": "live-server --port=4000 --host=localhost --watch=./dist/",
     "lint": "eslint \"./lib/**/*.js\"",
     "lint:fix": "eslint --fix \"./lib/**/*.js\"",
-    "fix": "yarn run format && yarn run lint:fix",
+    "fix": "yarn run lint:fix && yarn run format",
     "lint-staged": "lint-staged",
     "precommit": "lint-staged",
     "test": "jest"

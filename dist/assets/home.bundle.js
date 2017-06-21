@@ -9773,7 +9773,7 @@ function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
 }
 
-(0, _reactDom.render)(_react2.default.createElement(_Home2.default, { data: window.__APP_INITIAL_STATE__ }), document.getElementById("root")); // app/browser.js
+(0, _reactDom.render)(_react2.default.createElement(_Home2.default, { data: window.__APP_INITIAL_STATE__ }), document.getElementById('root')); // app/browser.js
 
 /***/ }),
 /* 83 */
@@ -22426,7 +22426,7 @@ function _interopRequireDefault(obj) {
 
 var Home = function Home(_ref) {
   var data = _ref.data;
-  return _react2.default.createElement("div", null, _react2.default.createElement("div", null, " Home "), _react2.default.createElement(_List2.default, { data: data }));
+  return _react2.default.createElement('div', null, _react2.default.createElement('div', null, ' Home '), _react2.default.createElement(_List2.default, { data: data }));
 };
 
 exports.default = Home;
@@ -22452,12 +22452,12 @@ function _interopRequireDefault(obj) {
 
 var ListItem = function ListItem(_ref) {
   var item = _ref.item;
-  return _react2.default.createElement("li", null, " ", item);
+  return _react2.default.createElement('li', null, ' ', item);
 };
 
 var List = function List(_ref2) {
   var listData = _ref2.data;
-  return _react2.default.createElement("div", null, _react2.default.createElement("ul", null, listData.map(function (item) {
+  return _react2.default.createElement('div', null, _react2.default.createElement('ul', null, listData.map(function (item) {
     return _react2.default.createElement(ListItem, { key: item, item: item });
   })));
 };

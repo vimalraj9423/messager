@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var data = {
-  data: ["one", "two", "three"]
+  data: ['one', 'two', 'three', 'four']
 };
 
 var mockData = exports.mockData = function mockData() {

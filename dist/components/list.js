@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -13,9 +13,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var ListItem = function ListItem(_ref) {
   var item = _ref.item;
   return _react2.default.createElement(
-    "li",
+    'li',
     null,
-    " ",
+    ' ',
     item
   );
 };
@@ -23,13 +23,13 @@ var ListItem = function ListItem(_ref) {
 var List = function List(_ref2) {
   var listData = _ref2.data;
   return _react2.default.createElement(
-    "div",
+    'div',
     null,
     _react2.default.createElement(
-      "ul",
+      'ul',
       null,
       listData.map(function (item) {
-        return _react2.default.createElement(ListItem, { item: item });
+        return _react2.default.createElement(ListItem, { key: item, item: item });
       })
     )
   );

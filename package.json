@@ -70,7 +70,11 @@
     "webpack": "^3.0.0"
   },
   "lint-staged": {
-    "lib/**/*.js": ["prettier --write", "eslint --fix", "git add"]
+    "lib/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "jest": {
     "roots": ["dist/__tests__/"]

@@ -9,7 +9,7 @@ exports.executeQueryAndDisconnect = executeQueryAndDisconnect;
 
 var _config = require('./config');
 
-var TIMEOUT_MAX = 30000;
+var TIMEOUT_MAX = 90000;
 
 function connectToServer(connection) {
   connection.connect(function () {
@@ -33,8 +33,9 @@ function executeQueryAndDisconnect(query) {
   return new Promise(function (resolve, reject) {
     connection.query(query, function (error, results, fields) {
       if (error) throw error;
-      releaseConnection(connection);
       resolve(results);
+      connection.emit('release', connection);
+      console.log(_config.connectionPool._freeConnections.indexOf(connection));
     });
   });
 }

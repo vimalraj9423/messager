@@ -14,6 +14,9 @@ var _app2 = _interopRequireDefault(_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+global.navigator = global.navigator || {};
+global.navigator.userAgent = global.navigator.userAgent || 'all';
+
 var PORT = 4000;
 
 _app2.default.use('/assets', _express2.default.static(_path2.default.join(__dirname, '/assets')));

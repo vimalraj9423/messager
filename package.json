@@ -20,7 +20,12 @@
     "lint:fix": "eslint --fix \"./lib/**/*.js\"",
     "fix": "yarn run format && yarn run lint:fix",
     "lint-staged": "lint-staged",
+<<<<<<< HEAD
     "precommit": "lint-staged"
+=======
+    "precommit": "lint-staged",
+    "test": "jest"
+>>>>>>> c1b308731de027786fdb6ca999f732c926539372
   },
   "dependencies": {
     "compression": "^1.6.2",
@@ -56,6 +61,10 @@
     "eslint-plugin-react": "^7.0.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.13.4",
+<<<<<<< HEAD
+=======
+    "jest": "^20.0.4",
+>>>>>>> c1b308731de027786fdb6ca999f732c926539372
     "lint-staged": "^4.0.0",
     "live-reload": "^1.1.0",
     "live-server": "^1.2.0",
@@ -68,6 +77,17 @@
     "webpack": "^3.0.0"
   },
   "lint-staged": {
+<<<<<<< HEAD
     "lib/**/*.js": ["prettier --write", "eslint --fix", "git add"]
+=======
+    "lib/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "roots": ["dist/__tests__/"]
+>>>>>>> c1b308731de027786fdb6ca999f732c926539372
   }
 }

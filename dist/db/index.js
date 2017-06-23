@@ -35,7 +35,7 @@ function executeQueryAndDisconnect(query) {
       if (error) throw error;
       resolve(results);
       connection.emit('release', connection);
-      console.log(_config.connectionPool._freeConnections.indexOf(connection));
+      console.log(connection._freeConnections.indexOf(connection));
     });
   });
 }

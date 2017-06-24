@@ -32,8 +32,5 @@ find ./ -type f -name "\.*sw[klmnop]" -delete
 ```
 ### TODO
  - Configure `live-server` to auto reload browser
- - Configure `es-lint`
- - Configure `husky` package
  - Configure `pm2` package
  - Configure `seneca-web` (if complex routing is needed)
- - Solve `material-ui` issues if any

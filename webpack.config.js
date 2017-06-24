@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist/assets"),
     filename: "[name].bundle.js"
   },
+          devtool: "cheap-module-source-map",
   module: {
     loaders: [
       {

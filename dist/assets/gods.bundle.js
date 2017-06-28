@@ -41294,14 +41294,6 @@ function _taggedTemplateLiteral(strings, raw) {
 
 var defaultGodImage = 'http://static.fjcdn.com/pictures/Greek_a565c6_5451272.jpg';
 
-var floatingLabelStyle = {
-  color: _colors.pink[900]
-};
-
-var underlineStyle = {
-  borderColor: _colors.pink[900]
-};
-
 var GodFormWrapper = (0, _styledComponents2.default)(_Paper2.default)(_templateObject, _colors.pink[200]);
 
 var GodForm = function (_Component) {

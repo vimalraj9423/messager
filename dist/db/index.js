@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.makeQuery = undefined;
 exports.connectToServer = connectToServer;
+exports.releaseConnection = releaseConnection;
 exports.executeQueryAndDisconnect = executeQueryAndDisconnect;
 
 var _config = require('./config');

@@ -3,7 +3,8 @@ var path = require("path")
 module.exports = {
   entry: {
     home: "./dist/components/HomeClient.js",
-    gods: "./dist/components/GodClient.js"
+    gods: "./dist/components/GodClient.js",
+    swipeable: "./dist/components/Swipeable.js"
   },
   output: {
     path: path.resolve(__dirname, "dist/assets"),

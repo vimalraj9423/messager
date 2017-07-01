@@ -4,12 +4,11 @@ module.exports = {
    * http://pm2.keymetrics.io/docs/usage/application-declaration/
    */
   apps: [
-    // First application
     {
       name: 'APP',
       script: './dist/server.js',
-      watch: ["dist"],
-      watch_options : {
+      watch: ['dist'],
+      watch_options: {
         persistent: true,
         ignoreInitial: true
       },
@@ -33,7 +32,8 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@github.com:repo.git',
       path: '/var/www/production',
-      'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy':
+        'npm install && pm2 reload ecosystem.config.js --env production'
     },
     dev: {
       user: 'node',
@@ -47,4 +47,4 @@ module.exports = {
       }
     }
   }
-};
+}

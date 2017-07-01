@@ -43334,7 +43334,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _templateObject = _taggedTemplateLiteral(['\n  min-height: 450px ;\n  width: 100% ;\n  text-align: center ;\n  display: inline-block ;\n'], ['\n  min-height: 450px ;\n  width: 100% ;\n  text-align: center ;\n  display: inline-block ;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  width: 200px ;\n  padding: 10px;\n  margin: 10px ;\n  text-align: center ;\n  display:inline-block ;\n'], ['\n  width: 200px ;\n  padding: 10px;\n  margin: 10px ;\n  text-align: center ;\n  display:inline-block ;\n']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  width: 100% ;\n'], ['\n  width: 100% ;\n']);
+    _templateObject3 = _taggedTemplateLiteral(['width: 100%;'], ['width: 100%;']);
 
 var _react = __webpack_require__(5);
 

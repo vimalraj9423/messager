@@ -4,7 +4,8 @@ module.exports = {
   entry: {
     home: "./dist/features/city/components/HomeClient.js",
     gods: "./dist/features/gods/components/GodClient.js",
-    swipeable: "./dist/components/SwipeableClient.js"
+    swipeable: "./dist/components/SwipeableClient.js",
+    form: "./dist/components/formClient.js"
   },
   output: {
     path: path.resolve(__dirname, "dist/assets"),

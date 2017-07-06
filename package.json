@@ -29,6 +29,7 @@
     "express": "^4.15.3",
     "express-dynamic-router": "^0.2.7",
     "express-generator": "^4.15.0",
+    "json-loader": "^0.5.4",
     "material-auto-rotating-carousel": "^1.4.1",
     "material-ui": "next",
     "material-ui-icons": "^1.0.0-alpha.19",

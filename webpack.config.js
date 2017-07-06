@@ -11,6 +11,12 @@ module.exports = {
     path: path.resolve(__dirname, "dist/assets"),
     filename: "[name].bundle.js"
   },
+  node: {
+    console: true,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  },
   devtool: "cheap-module-source-map",
   module: {
     loaders: [

@@ -25,6 +25,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
     "compression": "^1.6.2",
     "express": "^4.15.3",
     "express-dynamic-router": "^0.2.7",

@@ -1,15 +1,14 @@
-var path = require("path")
-
+var path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = {
   entry: {
-    home: "./dist/features/city/components/HomeClient.js",
-    gods: "./dist/features/gods/components/GodClient.js",
-    swipeable: "./dist/components/SwipeableClient.js",
-    form: "./dist/components/formClient.js"
+      raja:'./dist/components/raja/template.js',
+      booking:'./dist/components/booking/bookingClient.js',
+      chat:'./dist/components/chatbot/chatClient.js'
   },
   output: {
-    path: path.resolve(__dirname, "dist/assets"),
-    filename: "[name].bundle.js"
+    path: path.resolve(__dirname, 'dist/assets'),
+    filename: '[name].bundle.js'
   },
   node: {
     console: true,
@@ -17,26 +16,26 @@ module.exports = {
     net: 'empty',
     tls: 'empty'
   },
-  devtool: "cheap-module-source-map",
+  devtool: 'cheap-module-source-map',
   module: {
     loaders: [
       {
         test: /\.js?$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       },
       {
         test: /\.css$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              url: false
-            }
-          }
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader'
+        })
       }
     ]
-  }
+  },
+  plugins: [new ExtractTextPlugin('styles.css')]
 }

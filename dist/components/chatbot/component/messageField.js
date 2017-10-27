@@ -149,7 +149,7 @@ var styles = function styles(theme) {
       borderRadius: 31,
       color: 'brown',
       position: 'absolute',
-      background: " #2196f3",
+      background: ' #2196f3',
       right: 2
     },
     hiddenClass: {

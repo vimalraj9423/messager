@@ -1,4 +1,9 @@
-const mysql = require('mysql')
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var mysql = require('mysql');
 
 // const config = {
 //   host: 'localhost',
@@ -7,11 +12,11 @@ const mysql = require('mysql')
 //   database: 'sample'
 // }
 
-const config = {
+var config = {
   host: 'softset.cnjmcywhbcvu.us-west-2.rds.amazonaws.com',
   user: 'softsetuser',
   password: 'softset123',
   database: 'gobumpr_test'
-}
+};
 
-export const connectionPool = mysql.createPool(config)
+var connectionPool = exports.connectionPool = mysql.createPool(config);
